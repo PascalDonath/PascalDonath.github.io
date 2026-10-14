@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Pascal Donath">
+<meta name="description" content="Tools und Showcases rund um Microsoft 365 Apps, Intune und PowerShell – von Pascal Donath.">
+<title>Tools · Pascal Donath</title>
+<style>
+  :root { --bg: #f6f7f8; --surface: #fff; --ink: #1b1f24; --muted: #5b6470; --line: #dde1e6; --accent: #0f6a73; --accent-soft: #e3f1f2; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111418; --surface: #181d23; --ink: #e8ecf0; --muted: #9aa5b1; --line: #2a313a; --accent: #5cc3c9; --accent-soft: #163a3d; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 56px 16px 40px; }
+  header h1 { margin: 0 0 6px; font-size: 32px; letter-spacing: -.01em; }
+  header p { margin: 0; color: var(--muted); max-width: 640px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 32px; }
+  .card { display: flex; flex-direction: column; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+  a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h2 { margin: 0; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+  .tags span { font-size: 12px; background: var(--accent-soft); color: var(--accent); border-radius: 4px; padding: 2px 8px; }
+  .card.soon { border-style: dashed; opacity: .75; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13.5px; display: flex; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Tools</h1>
+    <p>Showcases rund um Microsoft 365 Apps, Intune und PowerShell – gebaut aus der Praxis als technischer Service Owner.</p>
+  </header>
+  <div class="grid">
+    <a class="card" href="office-admin-explorer/">
+      <h2>Office Admin Explorer</h2>
+      <p>Klickbare Nachbildung von Word, Excel, PowerPoint und Outlook. Zu jedem Element: idMso, Gruppenrichtlinie, Registry, Intune-Einstellung – plus Menüband-Baukasten und configuration.xml-Generator.</p>
+      <div class="tags"><span>M365 Apps</span><span>ADMX</span><span>Intune</span><span>customUI</span></div>
+    </a>
+    <div class="card soon">
+      <h2>PowerShell-Toolbox</h2>
+      <p>Skripte für Administration und Automatisierung. Folgt in Kürze.</p>
+      <div class="tags"><span>PowerShell</span><span>Graph</span></div>
+    </div>
+  </div>
+  <footer>
+    <span>Pascal Donath</span>
+    <a href="https://github.com/PascalDonath">GitHub</a>
+    <a href="https://pascal-donath.de">pascal-donath.de</a>
+  </footer>
+</main>
+</body>
+</html>
