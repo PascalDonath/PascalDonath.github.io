@@ -1,4 +1,7 @@
-   User-agent: *
-   Allow: /
+# tools.pascal-donath.de - everything may be crawled
+User-agent: *
+Allow: /
 
-   Sitemap: https://tools.pascal-donath.de/sitemap.xml
+# Hub page and the Office Admin Explorer (start page, policy overview and one page per ADMX policy)
+Sitemap: https://tools.pascal-donath.de/sitemap.xml
+Sitemap: https://tools.pascal-donath.de/office-admin-explorer/sitemap.xml
